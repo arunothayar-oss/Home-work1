@@ -139,7 +139,7 @@ class Spotify
 		}
 		}
 		}
-		if(choice==2)
+		else if(choice==2)
 		{
 		System.out.println("Welcome to Anirudh hits");
 		System.out.println("1.melody");
@@ -262,7 +262,7 @@ class Spotify
 		}
 		}
 		
-	 if(choice==3)
+	  else if(choice==3)
 		{
 		System.out.println("Welcome to Harris jeyaraj hits");
 		System.out.println("1.melody");
@@ -360,7 +360,7 @@ class Spotify
 		}
 		}
 		}
-	    if(choice==4)
+	     else if(choice==4)
 		{
 		System.out.println("Welcome to illaraja hits");
 		System.out.println("1.melody");
@@ -453,7 +453,7 @@ class Spotify
 		}
 		}
 		}
-		if(choice==5)
+		else if(choice==5)
 		{
 		System.out.println("Welcome to U1 hits");
 		System.out.println("1.melody");
