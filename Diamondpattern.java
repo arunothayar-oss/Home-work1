@@ -16,7 +16,7 @@ class Diamondpattern
 		}
 		for(int i=5;i<=7;i++)
 		{
-			for(int s=1;s<=((2*i)-(i-4));s++)
+			for(int s=1;s<=(i-4);s++)
 			{
 				System.out.print(" ");
 				
