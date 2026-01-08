@@ -14,6 +14,7 @@ class Arraymobile
 		}
 		for(int i=0;i<mobile.length;i++)
 		{
+			System.out.println("**********************");
 			System.out.println("Mobile Numbers:"  +mobile[i]);
 		}
 	}
