@@ -19,6 +19,7 @@ class Arraylogin
 			System.out.println("2.Login");
 			System.out.println("3.Exit");
 			System.out.println("Enter your choice");
+			System.out.println("");
 			choice=sc.nextInt();
 			switch(choice)
 			{
@@ -29,12 +30,8 @@ class Arraylogin
 					System.out.println("Enter the password name:");
 					password[index]=sc1.nextLine();
 					index++;
-					for(int i=0;i<index;i++)
-					{
-						System.out.println(username[i]+" ");
-						System.out.println(password[i]+" ");
-					}
 					break;
+					
 				}
 				case 2:
 				{
@@ -42,6 +39,7 @@ class Arraylogin
 					String u=sc1.nextLine();
 					System.out.println("Enter the password name:");
 					String p=sc1.nextLine();
+					for(int i=0;i<index;i++)
 					if(u.equals(username[i]))
 					{
 						if(p.equals(password[i]))
@@ -63,6 +61,10 @@ class Arraylogin
 					case 3:
 					{
 						break;
+					}
+					default:
+					{
+						System.out.println("invalid choice");
 					}
 			}
 			
