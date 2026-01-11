@@ -1,23 +1,24 @@
 import java.util.Scanner;
 class Bankingbalance
 {
-	static float balance;
-	static Scanner sc= new Scanner(System.in);
-	static void inputbalance()
+	 float balance;
+	 Scanner sc= new Scanner(System.in);
+	 void inputbalance()
 	{
 		System.out.println("Enter the input balance");
 		balance=sc.nextFloat();
 		
+		
 	}
-	static void deposit()
+	 void deposit()
 	{
 		System.out.println("Enter the deposit amount");
 		float amount=sc.nextFloat();
 		balance=balance+amount;
-		displaybalance();
+		
 		
 	}
-	static void withdraw()
+	 void withdraw()
 	{
 		System.out.println("Enter the amount");
 		float amount=sc.nextFloat();
@@ -30,16 +31,18 @@ class Bankingbalance
 		{
 			System.out.println("Error insufficient balance");
 		}
-		displaybalance();
+
 	}
-	static void displaybalance()
+	 void displaybalance()
 	{
 		System.out.println("current balance"+balance);
 	}
 	public static void main(String[] args)
 	{
-		inputbalance();
+		Scanner sc=new Scanner(System.in);
 		int choice;
+		Bankingbalance obj=new Bankingbalance();
+		obj.inputbalance();
 		do
 		{
 			System.out.println("*******************");
@@ -53,18 +56,18 @@ class Bankingbalance
 			{
 				case 1:
 				{
-					deposit();
+					obj.deposit();
 					break;
 				}
 				case 2:
 				{
-					withdraw();
+					obj.withdraw();
 				
 					break;
 				}
 				case 3:
 				{
-					displaybalance();
+					obj.displaybalance();
 					
 					break;
 				}

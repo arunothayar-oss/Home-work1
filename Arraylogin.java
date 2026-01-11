@@ -5,12 +5,10 @@ class Arraylogin
 	{
 		Scanner sc=new Scanner(System.in);
 		Scanner sc1=new Scanner(System.in);
-		System.out.print("Enter the length of user name:");
-		int len1=sc.nextInt();
-		System.out.print("Enter the length of password name:");
-		int len2=sc.nextInt();
-		String username[]=new String[len1];
-		String password[]=new String[len2];
+		System.out.println("Enter the number of name:");
+		int no_of_name=sc.nextInt();
+		String username[]=new String[no_of_name];
+		String password[]=new String[no_of_name];
 		int index=0;
 		int choice;
 		do
@@ -39,33 +37,33 @@ class Arraylogin
 					String u=sc1.nextLine();
 					System.out.println("Enter the password name:");
 					String p=sc1.nextLine();
-					for(int i=0;i<index;i++)
-					if(u.equals(username[i]))
+					for(int i=0;i<username.length;i++)
 					{
-						if(p.equals(password[i]))
+						if(u.equals(username[i]))
 						{
-							System.out.println("login successful:");
+							if(p.equals(password[i]))
+							{
+								System.out.println("login successful:");
+							}
+							else
+							{
+							System.out.println("invalid password");
+							}
 						}
 						else
 						{
-							System.out.println("invalid password");
-						}
-					}
-					else
-						{
 							System.out.println("incorrect username");
 						}
+					}
 						break;
-					
 				}
 					case 3:
 					{
 						break;
 					}
 					default:
-					{
+					
 						System.out.println("invalid choice");
-					}
 			}
 			
 		}while(choice!=3);

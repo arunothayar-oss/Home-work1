@@ -1,11 +1,11 @@
 import java.util.Scanner;
 class Result
 {
-	static int m1,m2,m3;
-	static int total;
-	static double percentage;
-	static Scanner sc=new Scanner(System.in);
-	static void inputmarks()
+	 int m1,m2,m3;
+	 int total;
+	 double percentage;
+	 Scanner sc=new Scanner(System.in);
+	void inputmarks()
 	{
 		System.out.println("Enter the marks1:");
 		m1=sc.nextInt();
@@ -14,20 +14,22 @@ class Result
 		System.out.println("Enter the marks3:");
 		m3=sc.nextInt();
 	}
-	static void calculatetotal()
+    void calculatetotal()
 	{
 		total=m1+m2+m3;
 		System.out.println("Total marks:"+total);
 		
 	}
-	static void calculatepercentage()
+    void calculatepercentage()
 	{
+		calculatetotal();
 		percentage=total/3.0;
 		System.out.println("percentage:"+percentage);
 		
 	}
-	static void displayresult()
+    void displayresult()
 	{
+		calculatepercentage();
 		if(percentage>=40)
 		{
 				System.out.println("Result is pass");
@@ -38,8 +40,9 @@ class Result
 		}
 	}
 	
-	static void displaygrade()
+	 void displaygrade()
 	{
+		calculatepercentage();
 		if(percentage>=75)
 		{
 			System.out.println("grade is A");
@@ -60,7 +63,9 @@ class Result
 	}
 	public static void main(String[] args)
 	{
-		inputmarks();
+		Scanner sc=new Scanner(System.in);
+		Result obj=new Result();
+		obj.inputmarks();
 		int choice;
 		do
 		{
@@ -76,27 +81,22 @@ class Result
 			{
 				case 1:
 				{
-					calculatetotal();
+					obj.calculatetotal();
 					break;
 				}
 				case 2:
 				{
-					calculatetotal();
-					calculatepercentage();
+					obj.calculatepercentage();
 					break;
 				}
 				case 3:
 				{
-					calculatetotal();
-					calculatepercentage();
-					displayresult();
+					obj.displayresult();
 					break;
 				}
 				case 4:
 				{
-					calculatetotal();
-					calculatepercentage();
-					displaygrade();
+					obj.displaygrade();
 					break;
 				}
 				case 5:

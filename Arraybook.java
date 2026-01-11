@@ -15,6 +15,7 @@ class Arraybook
 		int option=0;
 		do
 		{
+			System.out.println("***********************");
 			System.out.println("1.Addbooks");
 			System.out.println("2.Display All books");
 			System.out.println("3.Search book by id");
@@ -27,7 +28,7 @@ class Arraybook
 				{
 					System.out.println("Enter the book names:");
 					bookname[index]=sc1.nextLine();
-					System.out.println("Enter the book id ");
+					System.out.println("Enter the book id ");  
 					bookid[index]=sc.nextInt();
 					index++;
 					break;
@@ -36,37 +37,37 @@ class Arraybook
 				{
 					for(int i=0;i<index;i++)
 					{
-					System.out.println(bookname[i]+"\t"+bookid[i]);
+						System.out.println(bookname[i]+"\t"+bookid[i]);
 					}
 					break;
 				}
-					case 3:
-					{
-						System.out.println("Enter the search id");
-						int searchid =sc.nextInt();
-						for(int i=0;i<index;i++)
-						{
-							if(searchid==bookid[i])
+				case 3:
+				{
+					System.out.println("Enter the search id");
+					int searchid =sc.nextInt();
+					for(int i=0;i<bookid.length;i++)
+					
+						if(searchid==bookid[i])
 							{
 								System.out.println("book found"+"\t "+ bookname[i]);
 							}
+						else
+						{
+							System.out.println("book  not found");
 						}
-							else
-							{
-								System.out.println("book not found");
-							}
-						
-					}
-				
-				case 4:
-				
-					break;
-				
-				default:
-				{
-					System.out.println("invalid option");
+					
+						break;
 				}
+				
+					case 4:
+				
+						break;
+				
+					default:
+					
+						System.out.println("invalid option");
 			}
+			
 		}while(option!=4);
 	}
 }
