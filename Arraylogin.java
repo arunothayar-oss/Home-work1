@@ -23,38 +23,45 @@ class Arraylogin
 			{
 				case 1:
 				{
-					System.out.println("Enter the user name:");
-					username[index]=sc1.nextLine();
-					System.out.println("Enter the password name:");
-					password[index]=sc1.nextLine();
-					index++;
+					if(index<username.length)      //index exceeds length
+					{
+						System.out.println("Enter the user name:");
+						username[index]=sc1.nextLine();
+						System.out.println("Enter the password name:");
+						password[index]=sc1.nextLine();
+						index++;
+						
+					}
+					else
+					{
+						System.out.println("The student id is full");
+					}
 					break;
-					
 				}
 				case 2:
 				{
-					System.out.println("Enter the user name:");
-					String u=sc1.nextLine();
-					System.out.println("Enter the password name:");
-					String p=sc1.nextLine();
-					for(int i=0;i<username.length;i++)
+					for(int i=0;i<index;i++)
 					{
+						System.out.println("Enter the user name:");
+						String u=sc1.nextLine();
+						System.out.println("Enter the password name:");
+						String p=sc1.nextLine();
+					
+					
 						if(u.equals(username[i]))
 						{
 							if(p.equals(password[i]))
 							{
 								System.out.println("login successful:");
 							}
-							else
-							{
-							System.out.println("invalid password");
-							}
 						}
+					
 						else
 						{
 							System.out.println("incorrect username");
 						}
 					}
+					
 						break;
 				}
 					case 3:

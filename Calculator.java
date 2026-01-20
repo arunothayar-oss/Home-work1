@@ -3,13 +3,17 @@ class Calculator
 	public static void main(String[] args)
 	{
 		Calculator obj=new Calculator();
-		int d=obj.add(10,20);
-		System.out.println(d);
+		
+		obj.add(10,20);
+		
+		
 	}
-	 int add(int a, int b)
+	 void   add(10,20)
 	{
-		 int c=a+b;
-		 return c;
+		 int c=10+20;
+		 System.out.println("c");
+		 
+		 
 		
 	}
 }
