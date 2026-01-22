@@ -2,11 +2,11 @@ import java.util.Scanner;
 class Identification
 {
 		Scanner sc=new Scanner(System.in);
-		int arr[]=new int[0];
+		int arr[]=new int[3];
 		int newArr[]=new int[arr.length-1];
 		int choice;
 		int index;
-		int deletionindex=2;
+		int deletionindex;
 	public static void main(String[] args)
 	{
 		Scanner sc=new Scanner(System.in);
@@ -32,12 +32,12 @@ class Identification
 				}
 				case 2:
 				{
-					Obj.deleteEmployee();
+					obj.deleteEmployee();
 					break;
 				}
 				case 3:
 				{
-					Obj.displayEmployee();
+					obj.displayEmployee();
 					break;
 				}
 				case 4:
@@ -49,6 +49,8 @@ class Identification
 			
 		}while(choice!=4);
 	}
+		void menu()
+		
 		void addemployee()
 		{
 				
