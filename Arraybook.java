@@ -43,17 +43,18 @@ class Arraybook
 				}
 				case 3:
 				{
-					for(int i=0;i<bookid.length;i++)
+					
 					System.out.println("Enter the search id");
 					int searchid =sc.nextInt();
+					for(int i=0;i<bookid.length;i++)
+					{
 						if(searchid==bookid[i])
 							{
 								System.out.println("book found"+"\t "+ bookname[i]);
+								return;
 							}
-						else
-						{
-							System.out.println("book  not found");
-						}
+					}
+						System.out.println("book not found");
 					
 						break;
 				}

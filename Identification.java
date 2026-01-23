@@ -1,75 +1,70 @@
 import java.util.Scanner;
 class Identification
 {
-		Scanner sc=new Scanner(System.in);
-		int arr[]=new int[3];
-		int newArr[]=new int[arr.length-1];
-		int choice;
-		int index;
-		int deletionindex;
+		
 	public static void main(String[] args)
 	{
-		Scanner sc=new Scanner(System.in);
 		Identification obj=new Identification();
-		int arr[]=new int[0];
-		int choice;
-		int index;
-		do
-		{
-			System.out.println("***********************");
-			System.out.println("1.Add employee ID");
-			System.out.println("2.Remove employee ID");
-			System.out.println("3.Display employee IDs");
-			System.out.println("4.Exit");
-			System.out.println("Enter the choice:");
-			choice=sc.nextInt();
-			switch(choice)
-			{
-				case 1:
-				{
-					obj.addemployee();
-					break;
-				}
-				case 2:
-				{
-					obj.deleteEmployee();
-					break;
-				}
-				case 3:
-				{
-					obj.displayEmployee();
-					break;
-				}
-				case 4:
-				{
-					break;
-				}
-				
-			}
-			
-		}while(choice!=4);
+		obj.menu();
 	}
-		void menu()
-		
-		void addemployee()
+	void menu()
 		{
-				
-			int newArr[]=new int[index+1];
-			for(int i=0;i<arr.length;i++)
+			Scanner sc=new Scanner(System.in);
+			int arr[]=new int[5];
+			int newArr[]=new int[arr.length-1];
+			int choice;
+			int index=0;
+			int deletionindex=0;
+			do
 			{
-				newArr[i]=arr[i];
-			}
+				System.out.println("***********************");
+				System.out.println("1.Add employee ID");
+				System.out.println("2.Remove employee ID");
+				System.out.println("3.Display employee IDs");
+				System.out.println("4.Exit");
+				System.out.println("Enter the choice:");
+				choice=sc.nextInt();
+				switch(choice)
+				{
+					case 1:
+					{
+						addemployee(arr,index);
+						break;
+					}
+					case 2:
+					{
+						deleteEmployee(arr,newArr,deletionindex);
+						break;
+					}
+					case 3:
+					{
+						displayEmployee(arr);
+						break;
+					}
+					case 4:
+					{
+						break;
+					}
+				}
+			
+			
+			}while(choice!=4);
+		}	
+		void addemployee(int arr[],int index)
+		{
 			if(index<arr.length)
 			{
+				Scanner sc=new Scanner(System.in);
 				System.out.println("Enter employee id");
-				newArr[index]=sc.nextInt();
+				arr[index]=sc.nextInt();
 				index++;
 				System.out.println("Employee id added");
 				
 			}
 		}
-		void deleteEmployee()
+		void deleteEmployee(int arr[],int newArr[],int deletionindex)
 		{
+			Scanner sc=new Scanner(System.in);
 			System.out.println("Enter employeeId to remove:");
 			deletionindex=sc.nextInt();
 			for(int i=0;i<deletionindex;i++)
@@ -82,13 +77,11 @@ class Identification
 			}
 			
 		}
-		void displayEmployee()
+		void displayEmployee(int arr[])
 		{
-			for(int i=0;i<newArr.length;i++)
+			for(int i=0;i<arr.length;i++)
 			{
-				System.out.print(newArr[i]+" ");
+				System.out.print(arr[i]+" ");
 			}
-			
-			
 		}
 }
