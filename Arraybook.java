@@ -26,12 +26,19 @@ class Arraybook
 			{
 				case 1:
 				{
-					System.out.println("Enter the book names:");
-					bookname[index]=sc1.nextLine();
-					System.out.println("Enter the book id ");  
-					bookid[index]=sc.nextInt();
-					index++;
-					break;
+					if(index<bookname.length)
+					{
+						System.out.println("Enter the book names:");
+						bookname[index]=sc1.nextLine();
+						System.out.println("Enter the book id ");  
+						bookid[index]=sc.nextInt();
+						index++;
+					}
+					else
+					{
+						System.out.println("Book names are full");
+					}
+						break;
 				}
 				case 2:
 				{

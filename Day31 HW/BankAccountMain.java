@@ -44,3 +44,23 @@ class BankAccountMain
 		}while(option!=4);
 	}
 }
+
+
+	//Bank Account System
+	//Question:
+	//Create a menu-driven program using BankAccount class to:
+
+	//1.Deposit
+
+	//2.Withdraw
+
+	//3.Display balance
+
+	//4.Exit
+
+	//(Initial balance = 1000)
+
+	//Sample Input:
+	//1 500 3 4
+	//Sample Output:
+	//Amount deposited Balance = 1500 Exit

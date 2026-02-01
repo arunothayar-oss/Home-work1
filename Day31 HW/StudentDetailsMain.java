@@ -40,3 +40,17 @@ class StudentDetailsMain
 		}while(option!=3);
 	}
 }
+
+
+		//Student Management
+		//Create a  Java program using a Student class to perform:
+
+		//1.Add student details
+
+		//2.Update student name
+
+		//3.Display student details
+
+		//4.Exit
+
+		
