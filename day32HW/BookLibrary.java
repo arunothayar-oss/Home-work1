@@ -44,7 +44,7 @@ class BookLibrary
 	}
 	void displayDetails()
 	{
-		for(int i=0;i<index;i++)
+		for(int i=0;i<index;i++)	//index indicates no of books stored at index=2
 		{
 			System.out.print(bookId[i]+"\t "+title[i]+"\t "+author[i]);
 			System.out.println("");
@@ -71,6 +71,7 @@ class BookLibrary
 				}
 			}
 		}
+		System.out.println("Id not found:");
 	}
 	void returnBook()
 	{
@@ -93,5 +94,6 @@ class BookLibrary
 				}
 			}
 		}
+		System.out.println("Id not found:");
 	}
 }
