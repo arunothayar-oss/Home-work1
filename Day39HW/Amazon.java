@@ -51,3 +51,28 @@ public class Amazon
     }
 
 }
+
+		/*	Design and implement a console-based Shopping Cart Application using a Singly Linked List in Java.
+Each product added to the cart should be stored as a node in the linked list.
+🔹 Requirements
+Create a Product class that represents a node with the following data members:
+productId (int)
+productName (String)
+price (double)
+next (Product reference)
+Create a ShoppingCart class to manage the singly linked list:
+Maintain a head reference.
+Implement an insertion method to add a product at the end of the linked list.
+Create a menu-driven console application using Scanner with the following options:
+Add Product to Cart
+View Cart Items
+Exit
+The program should allow the user to add multiple products dynamically.
+Only insertion operation is allowed
+(No deletion, update, or search operations).
+🔹 Constraints
+Use Singly Linked List only
+Do not use arrays or collections
+Follow proper class and object concepts
+Program should run continuously until the user chooses Exit*/
+

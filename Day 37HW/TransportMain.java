@@ -122,3 +122,106 @@ public class TransportMain
             }while(choice!=5);
     }
 }
+
+
+
+
+
+
+/*  Develop a menu-driven Java program to implement a Transport Management System using Object Oriented Programming concepts.
+
+Program Requirements:
+Create an abstract class Transport with the following details:
+
+Data members:
+
+Passenger ID
+
+Passenger Name
+
+From City
+
+To City
+
+Distance
+
+Fare
+
+An abstract method calculateFare()
+
+A method displayTicket() to display ticket details
+
+Create two subclasses:
+
+CityBus
+
+Fare = Distance × 5
+
+LuxuryBus
+
+Fare = (Distance × 10) + 200
+
+Implement a menu-driven program with the following options:
+
+City Bus Booking
+
+Luxury Bus Booking
+
+Calculate Fare
+
+Display Ticket
+
+Exit
+
+Allow the user to select a route from the following:
+
+Chennai → Bangalore (350 km)
+
+Chennai → Coimbatore (500 km)
+
+Chennai → Madurai (460 km)
+
+Chennai → Trichy (330 km)
+
+Chennai → Salem (340 km)
+
+Use runtime polymorphism to calculate the fare based on the selected transport type.
+
+The program should continue execution until the user selects the Exit option.
+
+
+Sample Input:
+
+---- TRANSPORT MANAGEMENT SYSTEM ----
+1. City Bus Booking
+2. Luxury Bus Booking
+3. Calculate Fare
+4. Display Ticket
+5. Exit
+Enter your choice: 1
+
+Enter Passenger ID: 101
+Enter Passenger Name: Arun
+
+Select Route:
+1. Chennai -> Bangalore
+2. Chennai -> Coimbatore
+3. Chennai -> Madurai
+4. Chennai -> Trichy
+5. Chennai -> Salem
+Enter route choice: 2
+Ticket Booked Successfully
+
+Enter your choice: 3
+Fare Calculated Successfully
+
+Enter your choice: 4
+
+Sample Output:
+
+----- TICKET DETAILS -----
+Passenger ID   : 101
+Passenger Name : Arun
+Route          : Chennai -> Coimbatore
+Distance       : 500.0 km
+Total Fare     : ₹2500.0      */
