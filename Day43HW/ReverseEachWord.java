@@ -23,3 +23,21 @@ public class ReverseEachWord
                 
     }
 }
+
+
+/*Reverse Each Word
+
+Write a Java console program that:
+
+Accepts a sentence.
+
+Reverse each word individually.
+
+Print modified sentence.
+
+Example:
+Input: Hello Java
+Output: olleH avaJ
+
+
+Must use StringBuilder */

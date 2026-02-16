@@ -40,3 +40,20 @@ public class WordCounterProgram
     }
     
 }
+
+
+
+/*Word Counter Program
+Write a Java console program that:
+
+Accepts a sentence from the user.
+
+Prints:
+
+Total number of characters (without spaces)
+
+Total number of words
+
+Total number of vowels
+
+ Use only String methods (length(), charAt(), split(), etc.)*/

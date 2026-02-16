@@ -25,3 +25,22 @@ public class PalindromeChecker
        }
     }
 }
+
+
+/*Palindrome Checker
+
+Write a Java program that:
+
+Accepts a string from the user.
+
+Checks whether it is a palindrome.
+
+Print:
+
+"Palindrome" or
+
+"Not Palindrome"
+
+
+👉 Do NOT use StringBuilder reverse().
+👉 Use only String methods. */

@@ -23,3 +23,22 @@ public class EmailValidator
     }
        
 }
+
+
+/*Email Validator (Basic)
+
+Write a program that:
+
+Accepts an email ID.
+
+Validate:
+
+Must contain "@"
+
+Must contain "."
+
+"@" should come before "."
+
+
+Print "Valid Email" or "Invalid Email"  */
+
