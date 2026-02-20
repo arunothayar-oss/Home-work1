@@ -58,3 +58,57 @@ public class StudentMain
     }
          
 }
+/*    Create a console-based Java application to manage student academic details using an Inner Class and Array.
+Requirements:
+Create an outer class named Institution
+Variable: institutionName
+Inside the Institution class, create an inner class named Student
+Variables:
+studentName
+rollNo
+int[] marks (Array for storing subject marks)
+average
+grade
+The program should:
+Ask the user to enter:
+Student name
+Roll number
+Number of subjects
+Dynamically create an array for marks based on subject count
+Accept marks using loop
+Calculate average
+Assign grade using conditions:
+90 and above → Grade A
+75 to 89 → Grade B
+50 to 74 → Grade C
+Below 50 → Fail
+Display full student details
+Implement the program using a Menu Driven System:
+Copy code
+
+1. Add Student
+2. Add Marks
+3. Calculate Grade
+4. Display Student Details
+5. Exit
+Sample Input
+Copy code
+
+Enter Student Name: Arun
+Enter Roll No: 101
+Enter Number of Subjects: 3
+
+Enter Marks:
+78
+85
+90
+Expected Output
+Copy code
+
+Institution Name: ABC Institution
+Student Name: Arun
+Roll No: 101
+Marks: 78 85 90
+Average: 84.33
+Grade: B    */
+
