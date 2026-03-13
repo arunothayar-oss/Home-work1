@@ -1,0 +1,234 @@
+Screens for Each operations
+1.RAWMATERIALS PURCHASE
+Used by : Store keeper
+Purpose : Rawmaterials and grocies purchased from vendors
+Screen name : Purchase entry
+DATA FIELDS
+1.purchase id
+2. supplier name 
+3.supplier contact
+4.Item name(Rice, tomato ,milk,fruits, onion etc...)
+5.Category(Vegetables/groceries/milk/fruits)
+6.Quantity purchased
+7.Unit
+8.Unit price
+9.Total price
+10.payment method(to suppliers through which mode  )
+
+
+System Actions
+
+1.Save Purchase
+2.Update Inventory Automatically
+
+
+STORING INVENTORY
+Used by : Store Keeper
+Purpose : To store and track Rawmaterials 
+Screen: Inventory stock
+DATA FIELDS
+1.Item id
+2.Item Name
+3.Category
+4.Unit
+5.Quantity
+6.price
+7.Last purchase 
+8.Supplier 
+9.Minimum Stock level
+10.Storage location(Storage/Refrigerator)
+
+FUNCTIONS
+1.Add item
+2.Delete item
+3. show low stock alert
+4. update stock 
+
+
+STOCK AVAILABILITY SCREEN 
+Used by : chief/storekeeper
+Purpose : To check the stock
+Screen name: Stock Availability 
+ 
+ DATA FIELDS
+ 1. Item name
+ 2.Category
+ 3.current Quantity
+ 4.unit
+ 5.Minimum level
+ 6.Status(Available/low/out of stack)
+ 
+ 
+ FILTERS
+ 1.Item 
+ 2.Category
+ 3.Date
+ 
+ Assign Raw Materials to Chef Screen
+ Used by : Chef
+ Purpose: Assign ingredints for cooking
+ Screen Name : Kitchen 
+ DATA FIELDS
+ 1. Issue Id
+ 2.Chef Name
+ 3. Dish Name
+ 4.Date
+ 5. Rawmaterials
+ 6.Quantity issued
+ 7.unit
+ 8.Remaining stock
+ 9.Issued by
+ 
+ Functions
+ Deduction of stock Automatically
+ 
+ FOOD PREPARATION SCREEN
+ Used by : chef
+ Purpose : for food preparation
+ Screen Name : Food Preparation 
+ 
+ DATA FIELDS
+ 1. Preparation Id
+ 2.Dish Name
+ 3.Ingredients used
+ 4.Quantity prepared
+ 5.Preparation Time
+ 6.Prepared by
+ 7.Status(Preparing/ready)
+ 
+ CUSTOMER ORDER SCREEN(Waiter Tablet)
+ Used by : Waiter
+ Purpose : To take order from customers
+ Screen Name : Cusomer order screen
+ 
+ DATA FIELDS 
+ 1. Order id
+ 2. Table name
+ 3.Waiter name
+ 4.No of persons
+ 5.Order Type(dine in /Take away)
+ 6.Dish Name
+ 7.Quantity
+ 8.Price
+ 9.Total Price
+ 10.Serving time
+ 11.Served by 
+ 
+System Actions
+1.Send Order to Kitchen
+2.Update Order Status
+
+TAKE AWAY/PACKING SCREEN
+Used by: Packing Staff
+Purpose : for packing
+Screen Name: Food Packing
+
+DATA FIELDS
+1.Order ID
+2.Customer Name
+3.Contact Number
+4.Items Ordered
+5.Quantity
+6.Total Price
+7.Packing Status
+8.Packed By
+
+BILLING SCREEN
+Used by: Cashier
+Purpose: For generating bill
+
+DATA FIELDS
+1.Bill Id
+2.Order Id
+3.Table Number
+4.Items Ordered
+5.Quantity
+6.Item Price
+7.Subtotal
+8.Tax
+9.Discount
+10.Total Amount
+11.Payment Method(Cash/Online Payment)
+12.Payment Status
+13.Time
+14.Date 
+
+ACCOUNT / FINANCE SCREEN
+Used by:Accountant/Manager
+Purpose:To record Accounts and for profit/Loss Analysis 
+
+DATA FIELDS
+1.Total Sales(Today)
+2.Total Expenses
+3.Net Profit/Loss
+4.Quick Link for other button Functions(eg add Expenses means Expense Screen will open)
+
+
+Sub-Screens Under Accounts
+1.Expense Entry Screen
+User to enter Expenses Like 
+1.Electricity Bill
+2.Water Bill
+3.Gas Bill
+4.Rent
+5.Maintenance
+6.Staff Salary
+
+DATA FIELDS
+1.Expense ID
+2.Date
+3.Expense Type
+4.Amount
+5.Payment Method
+6.Description
+
+2.SALES REPORT SCREEN
+Purpose: shows income from orders
+
+DATA FIELDS
+1.Date
+2.Order ID
+3.Bill Amount
+4.Payment Method
+5.Total Sales
+
+3.EXPENSE REPORT SCREEN(to calculate total expense)
+Purpose : To record all expenses
+ 
+DATA FIELDS
+1.Date
+2.Expense Type
+3.Amount
+4.Paid To
+
+4.SUPPLIER PAYMENT SCREEN
+Used for :payments to suppliers.
+
+DATA FIELDS
+1.Supplier Name
+2.Purchase ID
+3.Amount Paid
+4.Payment Date
+5.Balance Amount
+
+5.PROFIT/LOSS SCREEN
+Purpose:Calculates financial performance.
+
+DATA FIELDS
+1.Total Sales
+2.Total Expenses
+3.Net Profit / Loss
+
+MONTHLY REPORT SCREEN
+Used by : Accountant/Manager
+Purpose: To show total income, expenses, and profit for a selected month.
+
+DATA FIELDS
+1.Month(Month sales summary, Month expense summary, Month Profit/Loss)
+2.Generated date
+3.Prepared by
+ 
+ FUNCTIONS
+1.Select Month
+2.Generate Report
+3.Print Report
