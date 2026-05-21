@@ -1,0 +1,87 @@
+Marketing buisness Analyst diagram
+1.Market research
+2.Target customers
+3.Marketing plans
+4.Advertisement
+5.Instagram
+6.customer visit
+7.order food
+8.Feedback
+9.Improve Marketing
+
+SALES
+1.customer Awareness
+2.Customer Enters ntRestaura
+3.Customer view menu
+4.customer place order
+5.order sent to kitchen
+6.Food preparation
+7.Food served
+8.Payment
+9.Generate Bill
+10.Collect Feedback
+11.Customer Followup
+(Messages,offers,Loyalty)
+12.Repeat customer visit
+
+OPERATIONS
+1.Purchase RawMaterials
+2.Store in inventory
+check Stock Availability
+3.Assign to master
+4.Food preparation
+5.Customer order
+6.if it is dine(Indoor)			Outdoor
+7.customer seated				Food packed
+8.food served					Handled to customer
+9.Customer eats
+10.Billing
+
+
+Accounts
+1.Record daily Expenses(Vegetables,Groceries,Gas,Small)
+2.Customer order food
+3.Billing
+4.Receive payment
+5.Record sales Daily in System
+6.Verify cash
+7.update daily accounts
+
+
+Finance
+1.Collect Sales record
+2.Collect daily Expenses
+3.verify payments
+4.calculate total income
+5.Calculate total expenses
+6.profit or loss Analysis
+7.Prepare Financial Reports
+8.financial planning and budgeting
+
+
+HR 
+1.Identify Staff Requirement
+2.post job information 
+3.Interview and select Employee
+4.Employee Hiring
+5.Provide basic Training
+6.Assign job role(chief/waiter/cleaner)
+7.Maintaining Attendance
+8.Check cooking team work
+9.Monitor staff performance
+10.Ensure food is served
+11.Ask customer Feedback
+12. Send salary Details to owner 
+
+
+Management
+1.Set buisness goal
+2.Plan restaurant operations
+3.Assign Responsibility
+4.Monitor daily activities
+5.Check sales and customer feed back
+6.Review Profit and loss analysis
+7.Identify problems
+8.conduct meeting with staff\HR
+9.take correct Actions
+10.Improve service and operations
