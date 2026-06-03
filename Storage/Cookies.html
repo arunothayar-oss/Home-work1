@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie theme example</title>
+</head>
+<body>
+    <h1>Cookie theme</h1>
+    <button onclick="setTheme('light')">LightTheme</button>
+    <button onclick="setTheme('dark')">Dark Theme</button>
+    <script>
+        // Apply saved theme when page loads
+        window.onload=function(){
+            let theme=getCookie("theme");
+            if(theme==dark)
+        {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+        else
+        {
+             document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        }
+        
+        };
+        // Store theme in cookie
+        function setTheme(theme)
+         {
+
+    document.cookie =
+        "theme=" + theme +
+        "; expires=Wed, 10 Jun 2026 12:00:00 UTC";
+
+    if (theme === "dark") {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    } 
+    else 
+    {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+    }
+}
+// Read cookie
+function getCookie(cookieName) {
+
+    let cookies = document.cookie.split(";");
+
+    for (let cookie of cookies) {
+
+        let data = cookie.trim();
+
+        if (data.startsWith(cookieName + "=")) {
+            return data.substring(cookieName.length + 1);
+        }
+    }
+
+    return "";
+}
+    </script>
+</body>
+</html>
